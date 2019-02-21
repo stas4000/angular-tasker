@@ -1,0 +1,23 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-4">
+            <div class="input-group mb-3">
+                <input #task type="text" class="form-control" placeholder="Recipient's username"
+                    aria-label="Recipient's username" aria-describedby="basic-addon2">
+                <div class="input-group-append">
+                    <button (click)="addTask(task.value)">Add</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-4">
+            <div id="tasks"></div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-4">
+            <h5>Total Time: {{totalTime}}</h5>
+        </div>
+    </div>
+</div>
